@@ -181,3 +181,46 @@ let programador3 : Programador = {
 }
 
 ```
+
+# Seccion 10 - Interface
+
+Son muy parecidas al type pero cuando profundizamos, nos damos cuenta que se usan para otro tipo de cosas
+ya en la sintaxis, es interface Programador{} no tiene el =(igual)
+
+```
+
+interface ProgramadorInterface{
+    nombre: string,
+    tecnologias : string[],
+    tomarMate?: boolean | null
+    //si asignamos un signo de pregunta es opcional este atributo
+}
+
+
+let dev: ProgramadorInterface = {
+    nombre: 'Guillermo Lescano',
+    tecnologias: ['React', 'Python'],
+    tomarMate: false
+}
+
+let dev2 : ProgramadorInterface = {
+    nombre: 'tecnologias',
+    tecnologias: ['HTML', 'COBOL']
+    //no agregamos tomarMate porque es opcional
+}
+
+let dev3 : ProgramadorInterface = {
+    nombre: 'tecnologias',
+    tecnologias: ['HTML', 'COBOL'],
+    tomarMate: null
+}
+
+
+function enviarCV(programador: ProgramadorInterface){
+    console.log(`Este cv es de ${programador.nombre}`)
+}
+
+enviarCV(dev)
+```
+
+# Seccion 11 - Clases y POO
