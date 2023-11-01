@@ -126,3 +126,23 @@ arregloTexto[0].indexOf('HTML')
 //si colocamos el . en la posicion del array, es igual que antes, nos aparece los metodos dependiendo del tipado
 ```
 
+# Seccion 08 - Objetos(introduccion)
+
+Son objetos literales , se puede sobrescribir el objeto, si y solo si, ponemos las mismas cosas que lleva dentro y por mas que no lo tipeamos
+en la sobreescritura no deja poner un number en nombre, ya que cuando se creo el bojeto era un string, asi que toma por tipo que es string
+
+```
+let programador = {
+    nombre: 'Guillermo Lescano',
+    tecnologias: ['React', 'Python'],
+    tomaMate: false
+}
+
+programador = {
+    nombre: 'Ricardo Bueno',
+    tecnologias: ['HTML'],
+    tomaMate: true
+}
+
+//Los objetos tiene un tipado interno
+```
