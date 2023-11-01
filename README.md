@@ -113,6 +113,16 @@ console.log(disney)
 Si yo pongo al comienzo que disney es String, entonces los dos ultimos renombramientos, darian error, ya que solo acepta string y asi
 si ponemos que es de tipo number o boolean
 
+# Seccion 07 - Arrays
+```
+//Para poder tipar los arrays, debemos decir de que tipo son y luego colocar corchetes como abajo 
 
+let arregloNumeros: number[] = [1,2,3,4,5,6]
 
+let arregloTexto: string[] = ['HTML', 'CSS', 'JS']
+
+arregloTexto[0].indexOf('HTML')
+
+//si colocamos el . en la posicion del array, es igual que antes, nos aparece los metodos dependiendo del tipado
+```
 
