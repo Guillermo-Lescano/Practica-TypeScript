@@ -31,8 +31,8 @@ En GitHub de SergiCode hay un repo con los tipos de datos
 Tenemos datos primitivos, compuestos y definidos por el usuario.
 
 ### Primitivo: 
-    - String
-    - Number
+    - String ==> const str: string = "" // '' // `` 
+    - Number ==> const num1: number = 
     - Boolean
     - Undefined
     - Null
@@ -47,3 +47,7 @@ Tenemos datos primitivos, compuestos y definidos por el usuario.
     - Class
     - Interface
     - Type
+
+Son definidos por el usuario porque aveces dependemos de las reglas de negocio.
+
+Cambios.
