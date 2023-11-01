@@ -1,1 +1,1 @@
-console.log('Hola mundo mi primer proyecto TypeScript')
+console.log('Curso de TypeScript')
