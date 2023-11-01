@@ -146,3 +146,38 @@ programador = {
 
 //Los objetos tiene un tipado interno
 ```
+
+# Seccion 09 - Type Personalizados
+
+Se pueden realizar type personalizados con una simple sintaxis, esto nos ayuda a evitar usar any, ya que creamos lo que va a recibir dicho objeto con sus determinados valores, y si son opcionales o no
+
+```
+// type nombre del tipo que queremos siempre en mayusculas como las interfaces
+
+type Programador = {
+    nombre: string,
+    tecnologias : string[],
+    tomarMate?: boolean | null
+    //si asignamos un signo de pregunta es opcional este atributo y puede ser boolen o null
+}
+
+
+let programadorr: Programador = {
+    nombre: 'Guillermo Lescano',
+    tecnologias: ['React', 'Python'],
+    tomarMate: false
+}
+
+let programador2 : Programador = {
+    nombre: 'tecnologias',
+    tecnologias: ['HTML', 'COBOL']
+    //no agregamos tomarMate porque es opcional
+}
+
+let programador3 : Programador = {
+    nombre: 'tecnologias',
+    tecnologias: ['HTML', 'COBOL'],
+    tomarMate: null
+}
+
+```
