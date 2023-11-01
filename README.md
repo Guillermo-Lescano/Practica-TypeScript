@@ -56,5 +56,63 @@ Son definidos por el usuario porque aveces dependemos de las reglas de negocio.
 
 # Seccion 04 - Datos primitivos
 
-function jugar(equipo1: number, equipo2: number): void
+function jugar(equipo1: number, equipo2: number): void {}
 si en una funcion no vamos a devolver nada, debemos poner void
+se puede no poner
+
+```
+/* -------------------- DATOS PRIMITIVOS -------------------- */
+
+let interMiami : number | null | undefined = 11 //podemos decir que puede tomar 3 tipo de valores
+let fcDallas : number = 11
+let messi : number = 1
+let juegaMessi : boolean = true
+
+let palabras: string = 'Me emocione al verlo a messi'
+
+function jugar(equipo1: number, equipo2: number, juegaMessi?: boolean): void {
+    
+    if(juegaMessi){
+        equipo1 += messi
+    }
+    if(equipo1 > equipo2){
+        console.log('Gana Inter de Miami')
+    }
+    if(equipo1 === equipo2){
+        console.log('Empatan')
+    }
+    if(equipo1 < equipo2){
+        console.log('Gana FC Dallas')
+    }
+}
+
+jugar(interMiami, fcDallas, juegaMessi)
+
+//al definir palabras como string si ponemos palabras. nos sale todo lo que necesitamos para 
+//para las propiedades string
+```
+
+# Seccion 06 - ANY:(cualquier dato)
+
+Es un concepto muy importante en TypeScript, hay que tratar de evitarlo, ya que es una mala practica, any es cualquier tipo de datos
+osea, puede ser boolean, number, string etc.
+
+```
+let disney;
+
+disney = 'Star Wars y Marvel'
+//console.log(disney.) al poner el punto me sale las metodos como tipo string, ya que al definir disney, sabe que escribimos un string
+
+disney = 150000000
+// console.log(disney.) ahora nos trae los metodos de number, y lo mas peligroso es que puede tomar cualquier dato la variable disney
+
+disney = true
+console.log(disney)
+```
+
+Si yo pongo al comienzo que disney es String, entonces los dos ultimos renombramientos, darian error, ya que solo acepta string y asi
+si ponemos que es de tipo number o boolean
+
+
+
+
