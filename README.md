@@ -224,3 +224,41 @@ enviarCV(dev)
 ```
 
 # Seccion 11 - Clases y POO
+
+Las clases cuando ponemos los atributos debemos inicializarlos o ponerle un signo de pregunta 
+
+```
+//La clase es como una especie de modelo y/o esqueleto de luego la instanciamos le pasamos los datos y listo
+
+class Pelicula{
+    nombre?: string = '';
+    protegonistas?: string[];
+    actores?: string[];
+
+    proyectarEnCine(){
+        console.log(`La pelicula ${this.nombre} esta siendo proyectada`)
+        //el this hace referencia a los atributos de la clase inicializados
+    }
+
+    //el constructor sobrescribe los datos con la cual inicializamos la clase
+    constructor(nombre: string, protagonistas: string[], actores: string[]){
+        //como pusimos arriba, el this hace referencia al atributo de la clase
+        this.nombre = nombre,
+        this.protegonistas = protagonistas,
+        this.actores = actores
+    }
+}
+
+const pelicula = new Pelicula('Barbie', ['Barbie', 'Ken'], ['Marggot Robbie', 'Rian Gosling'])
+const pelicula2 = new Pelicula('OppenHeimer', ['OppenHeimer', 'Strauss'], ['Cillian Murphy', 'Robert Downey Jr'])
+
+console.log(pelicula)
+console.log(pelicula2)
+
+```
+
+Existe una diferencia en como se crean las clases de TypeScript y JavaScript, ya que al inicio no se inicializan los atributos, en js directamente se pone el meto, y luego el constructor
+
+# Seccion 12 - Encapsulamientos y genéricos
+
+Seguimos con POO , vamos a trabar con los setters y los getters, que es lo que se llama encapsulamientos, y los genericos se ponen entre mayor y menor y es la forma en la cual una clase hace como un pivot en el tipo de dato que va a funcionar
