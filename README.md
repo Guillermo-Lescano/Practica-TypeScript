@@ -262,3 +262,6 @@ Existe una diferencia en como se crean las clases de TypeScript y JavaScript, ya
 # Seccion 12 - Encapsulamientos y genéricos
 
 Seguimos con POO , vamos a trabar con los setters y los getters, que es lo que se llama encapsulamientos, y los genericos se ponen entre mayor y menor y es la forma en la cual una clase hace como un pivot en el tipo de dato que va a funcionar
+
+# Seccion 13 - Creacion de un archivo React con TS
+
