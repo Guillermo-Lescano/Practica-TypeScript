@@ -7,7 +7,8 @@ const TodoApp = () => {
     const [listaTareas, setListaTareas] = useState<string[]>([])
     
     const handleAddTask = () =>{
-        if(newTasck.trim() === '') return
+        if(newTasck.trim() === '') 
+        return
             setListaTareas(tareaAnteriores => [...tareaAnteriores, newTasck])
             setNewTask('')    
     }
